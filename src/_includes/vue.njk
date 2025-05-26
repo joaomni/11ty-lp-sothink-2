@@ -1,0 +1,27 @@
+{% raw %}
+<script>
+	const app = Vue.createApp({})
+
+	app.component('tuali-card', {
+		props: {
+			icon: String,
+			title: String,
+			text: String
+		},
+		template: `
+	    <div class="max-w-[228px] lg:h-auto h-[208px] flex items-center bg-white rounded-2xl text-black lg:px-5 px-3 lg:py-7 py-5 relative">
+	      <main class="flex flex-col lg:gap-6 gap-2">
+	        <header class="absolute top-[-28px] left-1/2 transform -translate-x-1/2">
+	          <img :src="icon" width="68" height="50" class="lg:max-h-[600px] max-h-[59px]" alt="Tuali" />
+	        </header>
+	        <span class="font-bold xl:text-xl text-sm leading-[24px] lg:mt-12 mt-6 montserrat">{{ title }}</span>
+	        <div class="w-full h-1 bg-[#5CC0F4]"></div>
+	        <span class="mt-2 xl:text-base text-xs">{{ text }}</span>
+	      </main>
+	    </div>
+	  `
+	})
+
+	app.mount('#app')
+</script>
+{% endraw %}
