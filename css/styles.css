@@ -70,6 +70,14 @@ body {
     "wdth" 100;
 }
 
+.lora {
+  font-family: "Lora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 .armazem-background {
   width: 100%;
   background-repeat: no-repeat;
